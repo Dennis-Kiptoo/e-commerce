@@ -1,0 +1,16 @@
+spring:
+  config:
+    activate:
+      on-profile: native
+  application:
+    name: config-server
+
+  cloud:
+    config:
+      server:
+        native:
+          search-locations: classpath:/config
+        git:
+          uri:
+server:
+  port: 8888
